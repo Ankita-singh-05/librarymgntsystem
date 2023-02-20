@@ -59,7 +59,7 @@ echo "<script>alert('Invalid Details');</script>";
 <!--LOGIN PANEL START-->           
 <div class="row">
 <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3" >
-<div class="panel panel-warning">
+<div class="panel panel-primary">
 
 
 <!-- LIBRARY Image -->
@@ -82,7 +82,7 @@ echo "<script>alert('Invalid Details');</script>";
 <input class="form-control" type="password" name="password" autocomplete="off" required />
 </div>
 
- <button type="submit" name="login" class="btn btn-warning">LOGIN </button>
+ <button type="submit" name="login" class="btn btn-primary">LOGIN </button>
 </form>
  </div>
 </div>

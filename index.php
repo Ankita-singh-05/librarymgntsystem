@@ -71,7 +71,7 @@ echo "<script>alert('Invalid Details');</script>";
 <!--LOGIN PANEL START-->           
 <div class="row">
 <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3" >
-<div class="panel panel-info">
+<div class="panel panel-primary">
 <div class="panel-heading">
  LOGIN FORM
 </div>
@@ -89,7 +89,7 @@ echo "<script>alert('Invalid Details');</script>";
 </div>
 
 
- <button type="submit" name="login" class="btn btn-info">LOGIN </button> | <a href="signup.php">Not Register Yet</a>
+ <button type="submit" name="login" class="btn btn-primary">LOGIN </button> | <a href="signup.php">Register</a>
 </form>
  </div>
 </div>

@@ -73,7 +73,7 @@ function valid()
 {
 if(document.chngpwd.newpassword.value!= document.chngpwd.confirmpassword.value)
 {
-alert("New Password and Confirm Password Field do not match  !!");
+alert("New Password and Confirm Password Field do not match!!");
 document.chngpwd.confirmpassword.focus();
 return false;
 }
@@ -97,7 +97,7 @@ return true;
 <!--LOGIN PANEL START-->           
 <div class="row">
 <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3" >
-<div class="panel panel-info">
+<div class="panel panel-primary">
 <div class="panel-heading">
 Change Password
 </div>
@@ -119,7 +119,7 @@ Change Password
 <input class="form-control"  type="password" name="confirmpassword" autocomplete="off" required  />
 </div>
 
- <button type="submit" name="change" class="btn btn-info">Change </button> 
+ <button type="submit" name="change" class="btn btn-primary">Change </button> 
 </form>
  </div>
 </div>

@@ -63,7 +63,7 @@ function valid()
 {
 if(document.signup.password.value!= document.signup.confirmpassword.value)
 {
-alert("Password and Confirm Password Field do not match  !!");
+alert("Password and Confirm Password Field do not match!!");
 document.signup.confirmpassword.focus();
 return false;
 }
@@ -103,7 +103,7 @@ error:function (){}
              <div class="row">
            
 <div class="col-md-9 col-md-offset-1">
-               <div class="panel panel-danger">
+               <div class="panel panel-primary">
                         <div class="panel-heading">
                            SINGUP FORM
                         </div>
@@ -136,7 +136,7 @@ error:function (){}
 <input class="form-control"  type="password" name="confirmpassword" autocomplete="off" required  />
 </div>
                               
-<button type="submit" name="signup" class="btn btn-danger" id="submit">Register Now </button>
+<button type="submit" name="signup" class="btn btn-primary" id="submit">Register Now </button>
 
                                     </form>
                             </div>

@@ -43,9 +43,9 @@ else{?>
 
 
 
-            
+             <a href="issued-books.php" >
                  <div class="col-md-3 col-sm-3 col-xs-6">
-                      <div class="alert alert-info back-widget-set text-center">
+                      <div class="alert alert-info text-center">
                             <i class="fa fa-bars fa-5x"></i>
 <?php 
 $sid=$_SESSION['stdid'];
@@ -62,8 +62,9 @@ $issuedbooks=$query1->rowCount();
                         </div>
                     </div>
              
+                    <a href="issued-books.php" >
                <div class="col-md-3 col-sm-3 col-xs-6">
-                      <div class="alert alert-warning back-widget-set text-center">
+                      <div class="alert alert-info text-center">
                             <i class="fa fa-recycle fa-5x"></i>
 <?php 
 $rsts=0;
@@ -77,7 +78,7 @@ $returnedbooks=$query2->rowCount();
 ?>
 
                             <h3><?php echo htmlentities($returnedbooks);?></h3>
-                          Books Not Returned Yet
+                          Books Not Returned
                         </div>
                     </div>
         </div>

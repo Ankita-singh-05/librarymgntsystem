@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded",((e)=>{
       <!------MENU SECTION START-->
 <?php include('includes/header.php');?>
 <!-- MENU SECTION END-->
-    <div class="content-wra
+    <!-- <div class="content-wra -->
     <div class="content-wrapper">
          <div class="container">
         <div class="row pad-botm">
@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded",((e)=>{
 </div>
 <div class="row">
 <div class="col-md-10 col-sm-6 col-xs-12 col-md-offset-1"">
-<div class="panel panel-info">
+<div class="panel panel-primary">
 <div class="panel-heading">
 Issue a New Book
 </div>
@@ -151,7 +151,7 @@ $stdid=$_GET['StudentID'];
 <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
 else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
 
-<button type="submit" name="issue" id="submit" class="btn btn-info">Issue Book </button>
+<button type="submit" name="issue" id="submit" class="btn btn-primary">Issue Book </button>
 
 										</form>
                             </div>

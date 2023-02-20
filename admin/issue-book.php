@@ -101,7 +101,7 @@ error:function (){}
       <!------MENU SECTION START-->
 <?php include('includes/header.php');?>
 <!-- MENU SECTION END-->
-    <div class="content-wra
+    <!-- <div class="content-wra -->
     <div class="content-wrapper">
          <div class="container">
         <div class="row pad-botm">
@@ -113,7 +113,7 @@ error:function (){}
 </div>
 <div class="row">
 <div class="col-md-10 col-sm-6 col-xs-12 col-md-offset-1"">
-<div class="panel panel-info">
+<div class="panel panel-primary">
 <div class="panel-heading">
 Issue a New Book
 </div>
@@ -145,7 +145,7 @@ Issue a New Book
  </select>
  </div>
   <div class="form-group">
-<button type="submit" name="issue" id="submit" class="btn btn-info">Issue Book </button>
+<button type="submit" name="issue" id="submit" class="btn btn-primary">Issue Book </button>
 </div>
                             </div>
 							     </form>

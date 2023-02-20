@@ -111,7 +111,7 @@ header('location:manage-publications.php');
                                             <th>#</th>
                                             <th>Publication</th>
                                             <th>Creation Date</th>
-                                            <th>Updation Date</th>
+                                            <!-- <th>Updation Date</th> -->
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -129,7 +129,7 @@ foreach($results as $result)
                                             <td class="center"><?php echo htmlentities($cnt);?></td>
                                             <td class="center"><?php echo htmlentities($result->AuthorName);?></td>
                                             <td class="center"><?php echo htmlentities($result->creationDate);?></td>
-                                            <td class="center"><?php echo htmlentities($result->UpdationDate);?></td>
+                                            <!-- <td class="center"><?php echo htmlentities($result->UpdationDate);?></td> -->
                                             <td class="center">
 
                                             <a href="edit-publication.php?athrid=<?php echo htmlentities($result->id);?>"><button class="btn btn-primary"><i class="fa fa-edit "></i> Edit</button> 

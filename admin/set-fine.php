@@ -69,7 +69,7 @@ header('location:set-fine.php');
       <!------MENU SECTION START-->
 <?php include('includes/header.php');?>
 <!-- MENU SECTION END-->
-    <div class="content-wra
+    <!-- <div class="content-wra -->
     <div class="content-wrapper">
          <div class="container">
         <div class="row pad-botm">
@@ -81,7 +81,7 @@ header('location:set-fine.php');
 </div>
 <div class="row">
 <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3"">
-<div class="panel panel-info">
+<div class="panel panel-primary">
 <div class="panel-heading">
 Fine Update Section
 </div>
@@ -92,7 +92,7 @@ Fine Update Section
 <input class="form-control" type="text" name="finetf" autocomplete="off"  required />
 </div>
 
-<button type="submit" name="update" class="btn btn-info">Update </button>
+<button type="submit" name="update" class="btn btn-primary">Update </button>
 
                                     </form>
                             </div>

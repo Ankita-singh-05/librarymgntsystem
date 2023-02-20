@@ -93,7 +93,7 @@ else{
 											<th>Category</th>
 											<th>Publication Name</th>
                                             <th>ISBN </th>
-                                            <th>Price</th>
+                                            <!-- <th>Price</th> -->
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -116,7 +116,7 @@ if($result->Copies > $result->IssuedCopies)
                                             <td class="center"><?php echo htmlentities($result->CategoryName);?></td>
                                             <td class="center"><?php echo htmlentities($result->AuthorName);?></td>
                                             <td class="center"><?php echo htmlentities($result->ISBNNumber);?></td>
-                                            <td class="center"><?php echo htmlentities($result->BookPrice);?></td>
+                                            <!-- <td class="center"><?php echo htmlentities($result->BookPrice);?></td> -->
 											<td class="center"><a href="temp.php?ISBNNumber=<?php echo $result->ISBNNumber;?>&BookName=<?php echo $result->BookName;?>&AuthorName=<?php echo $result->AuthorName;?>&CategoryName=<?php echo $result->CategoryName;?>&BookPrice=<?php echo $result->BookPrice;?>&StudName=<?php echo $_SESSION['username'];?>&StudentID=<?php echo $_SESSION['stdid'];?>
 											"><button class="btn btn-primary" name="submit" id="submit" type="submit"><i class="fa fa-edit "></i> Request</button></td>		
                                         </tr>

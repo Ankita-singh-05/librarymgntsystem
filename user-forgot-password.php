@@ -74,7 +74,7 @@ return true;
 <!--LOGIN PANEL START-->           
 <div class="row">
 <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3" >
-<div class="panel panel-info">
+<div class="panel panel-primary">
 <div class="panel-heading">
  LOGIN FORM
 </div>
@@ -106,7 +106,7 @@ return true;
 <input type="text" class="form-control1"  name="vercode" maxlength="5" autocomplete="off" required  style="height:25px;" />&nbsp;<img src="captcha.php">
 </div> 
 
- <button type="submit" name="change" class="btn btn-info">Change Password</button> | <a href="index.php">Login</a>
+ <button type="submit" name="change" class="btn btn-primary">Change Password</button> | <a href="index.php">Login</a>
 </form>
  </div>
 </div>

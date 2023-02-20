@@ -59,7 +59,7 @@ header('location:manage-categories.php');
 </div>
 <div class="row">
 <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3"">
-<div class="panel panel-info">
+<div class="panel panel-primary">
 <div class="panel-heading">
 Category Info
 </div>
@@ -109,7 +109,7 @@ foreach($results as $result)
 <?php } ?>
 </div>
 <?php }} ?>
-<button type="submit" name="update" class="btn btn-info">Update </button>
+<button type="submit" name="update" class="btn btn-primary">Update </button>
 
                                     </form>
                             </div>

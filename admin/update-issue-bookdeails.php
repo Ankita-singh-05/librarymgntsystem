@@ -108,7 +108,7 @@ error:function (){}
 </div>
 <div class="row">
 <div class="col-md-10 col-sm-6 col-xs-12 col-md-offset-1"">
-<div class="panel panel-info">
+<div class="panel panel-primary">
 <div class="panel-heading">
 Issued Book Details
 </div>
@@ -204,7 +204,7 @@ else
 <div class="form-group">
 <div class="row">
 <div class="col-sm-8" style="padding-left:20px;padding-top:-20px;">
-<button type="submit" name="return" id="submit" class="btn btn-info">Return Book</button>
+<button type="submit" name="return" id="submit" class="btn btn-primary">Return Book</button>
 </div>
 </div>
 </div>

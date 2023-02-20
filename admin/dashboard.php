@@ -33,7 +33,7 @@ else{?>
 <?php include('includes/header.php');
 	  include('bgwork.php');?>
 <!-- MENU SECTION END-->
-    <div class="content-wrapper">
+    <!-- <div class="content-wrapper"> -->
          <div class="container">
         <div class="row pad-botm">
             <div class="col-md-12">
@@ -46,7 +46,8 @@ else{?>
              <div class="row">
 
  <a href="manage-books.php" ><div class="col-md-6 col-sm-3 col-xs-6">
-                      <div class="alert alert-success back-widget-set text-center">
+                      <!-- <div class="alert alert-success back-widget-set text-center"> -->
+                      <div class="alert alert-info text-center">
                             <i class="fa fa-book fa-5x"></i>
 <?php 
 $sql ="SELECT id from tblbooks ";
@@ -97,7 +98,7 @@ $returnedbooks=$query2->rowCount();
                         </div>
                     </div> -->
                     <a href="reg-students.php" >   <div class="col-md-6 col-sm-3 col-xs-6">
-                      <div class="alert alert-danger back-widget-set text-center">
+                      <div class="alert alert-info text-center">
                             <i class="fa fa-users fa-5x"></i>
                             <?php 
 $sql3 ="SELECT id from tblstudents ";
@@ -113,9 +114,10 @@ $regstds=$query3->rowCount();
 
 
  <div class="row">
-
+  <!-- link to publications listed page -->
+ <a href="manage-publications.php" >
  <div class="col-md-6 col-sm-3 col-xs-6">
-                      <div class="alert alert-success back-widget-set text-center">
+                      <div class="alert alert-info  text-center">
                             <i class="fa fa-user fa-5x"></i>
 <?php 
 $sql4 ="SELECT id from tblauthors ";
@@ -131,9 +133,9 @@ $listdathrs=$query4->rowCount();
                         </div>
                     </div>
 
-            
-                 <div class="col-md-6 col-sm-3 rscol-xs-6">
-                      <div class="alert alert-info back-widget-set text-center">
+                    <a href="manage-categories.php" >
+                 <div class="col-md-6 col-sm-3 col-xs-6">
+                      <div class="alert alert-info text-center">
                             <i class="fa fa-file-archive-o fa-5x"></i>
 <?php 
 $sql5 ="SELECT id from tblcategory ";

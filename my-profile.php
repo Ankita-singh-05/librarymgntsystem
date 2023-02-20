@@ -62,7 +62,7 @@ echo '<script>alert("Your profile has been updated")</script>';
              <div class="row">
            
 <div class="col-md-9 col-md-offset-1">
-               <div class="panel panel-danger">
+               <div class="panel panel-primary">
                         <div class="panel-heading">
                            My Profile
                         </div>

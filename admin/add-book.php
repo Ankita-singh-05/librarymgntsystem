@@ -61,7 +61,7 @@ header('location:manage-books.php');
       <!------MENU SECTION START-->
 <?php include('includes/header.php');?>
 <!-- MENU SECTION END-->
-    <div class="content-wra
+    <!-- <div class="content-wra -->
     <div class="content-wrapper">
          <div class="container">
         <div class="row pad-botm">
@@ -73,7 +73,7 @@ header('location:manage-books.php');
 </div>
 <div class="row">
 <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3"">
-<div class="panel panel-info">
+<div class="panel panel-primary">
 <div class="panel-heading">
 Book Info
 </div>
@@ -141,7 +141,7 @@ foreach($results as $result)
  <label>Price<span style="color:red;">*</span></label>
  <input class="form-control" type="text" name="price" autocomplete="off"   required="required" />
  </div>
-<button type="submit" name="add" class="btn btn-info">Add </button>
+<button type="submit" name="add" class="btn btn-primary">Add </button>
 
                                     </form>
                             </div>

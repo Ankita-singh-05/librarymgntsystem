@@ -1,7 +1,12 @@
 ﻿
 body, html{
-    background-image: url("https://static.vecteezy.com/system/resources/previews/002/051/233/original/large-bookcase-with-books-with-stairs-ladder-library-book-shelf-interior-books-and-knowledge-free-vector.jpg");
+    background-image: url("https://library.umaine.edu/wp-content/uploads/sites/77/2020/03/fogler-zoom-background2.jpg");
     height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* filter: blur(0.58px) brightness(0.73) contrast(0.93) opacity(0.8); */
+    /* backdrop-filter: blur(5px); */
+    background-size: cover;
 }
 
 body {
@@ -15,14 +20,16 @@ body {
     -webkit-border-radius:0px;
 }
 .content-wrapper {
-    margin-top: 40px;
-    min-height:800px;
-    padding-bottom:90px;
+    margin-top: 20px;
+    min-height:350px;
+    padding-bottom:90px;   
 }
 .header-line {
-    font-weight:900;
-    padding-bottom:25px;
-    border-bottom:1px solid #eeeeee;
+    font-size: 2.3rem;
+    font-weight:bolder;
+    color: rgb(25, 25, 188);
+    padding-bottom:20px;
+    border-bottom:3px solid #eeeeee;
     text-transform:uppercase;
 }
 .pad-botm {

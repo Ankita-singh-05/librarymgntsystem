@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 18, 2023 at 03:02 PM
+-- Generation Time: Feb 20, 2023 at 07:05 AM
 -- Server version: 10.4.27-MariaDB
--- PHP Version: 8.0.25
+-- PHP Version: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -56,14 +56,6 @@ CREATE TABLE `overdue` (
   `Fine` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
---
--- Dumping data for table `overdue`
---
-
-INSERT INTO `overdue` (`StudentID`, `StudentName`, `MobNumber`, `Fine`) VALUES
-('SID009', 'test', '8329629259', 269560),
-('3', 'aaa', '1242354354', 370);
-
 -- --------------------------------------------------------
 
 --
@@ -82,9 +74,10 @@ CREATE TABLE `tblauthors` (
 --
 
 INSERT INTO `tblauthors` (`id`, `AuthorName`, `creationDate`, `UpdationDate`) VALUES
-(2, 'Chetan Bhagatt', '2017-07-08 14:30:23', '2017-07-08 15:15:09'),
-(3, 'Anita Desai', '2017-07-08 14:35:08', NULL),
-(4, 'HC Verma', '2017-07-08 14:35:21', NULL);
+(5, 'Chetan Bhagat', '2023-02-19 05:17:42', NULL),
+(6, 'HC Verma', '2023-02-19 05:17:52', NULL),
+(7, 'Tech Knowledge', '2023-02-19 05:19:57', NULL),
+(8, 'Tech Neo', '2023-02-19 05:20:05', NULL);
 
 -- --------------------------------------------------------
 
@@ -110,11 +103,12 @@ CREATE TABLE `tblbooks` (
 --
 
 INSERT INTO `tblbooks` (`id`, `BookName`, `Copies`, `IssuedCopies`, `CatId`, `AuthorId`, `ISBNNumber`, `BookPrice`, `RegDate`, `UpdationDate`) VALUES
-(3, 'Chemistry', 10, 6, 6, 4, 1111, 15, '2017-07-08 20:17:31', '2023-02-18 06:17:21'),
-(4, 'physics', 5, 3, 4, 5, 20, 100, '2018-06-06 22:52:21', '2018-07-13 08:51:41'),
-(5, 'C Programming', 3, 1, 5, 3, 111, 200, '2018-06-11 17:48:02', '2018-07-20 09:37:04'),
-(6, 'Maths', 3, 1, 4, 2, 456, 500, '2018-06-11 17:49:10', '2023-02-17 05:13:37'),
-(7, 'ttest book', 5, 0, 6, 2, 9878978, 100, '2023-02-17 15:25:04', '2023-02-17 15:52:34');
+(8, 'Physics', 1, 1, 6, 6, 3456, 340, '2023-02-19 05:18:50', '2023-02-19 05:28:53'),
+(9, 'test', 1, 0, 9, 7, 360, 170, '2023-02-19 05:21:09', NULL),
+(10, 'Shivaji maharaj', 2, 0, 20, 5, 6789, 90, '2023-02-19 05:34:18', NULL),
+(11, 'test', 2, 0, 17, 6, 789, 209, '2023-02-19 05:34:52', NULL),
+(12, 'Dracula', 3, 0, 21, 7, 678, 300, '2023-02-19 05:35:59', NULL),
+(13, 'Vedic Mathematics', 2, 1, 19, 7, 2345, 100, '2023-02-20 06:01:07', '2023-02-20 06:03:59');
 
 -- --------------------------------------------------------
 
@@ -135,13 +129,13 @@ CREATE TABLE `tblcategory` (
 --
 
 INSERT INTO `tblcategory` (`id`, `CategoryName`, `Status`, `CreationDate`, `UpdationDate`) VALUES
-(4, 'Knowledge', 1, '2017-07-04 18:35:25', '2018-06-07 18:55:37'),
-(5, 'Technology', 1, '2017-07-04 18:35:39', '2017-07-08 17:13:03'),
-(6, 'Science', 1, '2017-07-04 18:35:55', '0000-00-00 00:00:00'),
-(7, 'Management', 1, '2017-07-04 18:36:16', '2018-06-06 18:46:41'),
-(8, 'physics', 1, '2018-06-11 17:31:43', '2018-06-11 17:36:56'),
-(9, 'history', 1, '2018-06-11 18:24:53', '2018-06-13 00:29:15'),
-(14, 'LifeStyle', 1, '2018-07-13 05:17:16', '0000-00-00 00:00:00');
+(15, 'Technology', 1, '2023-02-19 05:32:00', '0000-00-00 00:00:00'),
+(16, 'General Knowledge', 1, '2023-02-19 05:32:11', '0000-00-00 00:00:00'),
+(17, 'Science', 1, '2023-02-19 05:32:56', '0000-00-00 00:00:00'),
+(18, 'Physics', 1, '2023-02-19 05:33:03', '0000-00-00 00:00:00'),
+(19, 'Mathematics', 1, '2023-02-19 05:33:16', '0000-00-00 00:00:00'),
+(20, 'History', 1, '2023-02-19 05:33:50', '0000-00-00 00:00:00'),
+(21, 'Horror', 1, '2023-02-19 05:35:38', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -181,18 +175,11 @@ CREATE TABLE `tblissuedbookdetails` (
 --
 
 INSERT INTO `tblissuedbookdetails` (`id`, `BookId`, `StudentID`, `IssuesDate`, `ReturnDate`, `ReturnStatus`, `fine`) VALUES
-(6, 4, 'SID009', '2018-06-12 20:52:10', '2018-06-13 20:44:28', 1, 20),
-(7, 5, 'SID009', '2018-06-12 20:55:24', '2018-06-12 23:46:08', 1, 200),
-(8, 3, 'SID009', '2018-06-12 23:27:23', '2023-02-17 15:53:55', 1, 0),
-(9, 5, 'SID009', '2018-06-13 21:24:38', NULL, 0, NULL),
-(10, 5, 'SID009', '2018-06-13 21:44:50', NULL, 0, NULL),
-(11, 10, 'SID002', '2018-07-11 18:30:00', '2018-07-18 07:47:46', 1, 10),
-(12, 10, 'SID005', '2018-07-18 07:59:30', '2018-07-18 07:59:41', 1, NULL),
-(13, 5, 'SID005', '2018-07-18 08:00:25', '2018-07-18 08:00:41', 1, NULL),
-(14, 5, 'SID009', '2018-07-20 09:37:03', NULL, 0, NULL),
-(15, 5, 'SID009', '2018-07-20 09:40:40', NULL, 0, NULL),
 (18, 7, '3', '2023-02-02 15:47:17', '2023-02-18 06:14:12', 0, NULL),
-(19, 3, '5', '2023-02-18 06:16:38', '2023-02-18 06:17:21', 1, NULL);
+(19, 3, '5', '2023-02-18 06:16:38', '2023-02-18 06:17:21', 1, NULL),
+(20, 3, '8', '2023-02-18 14:34:54', '2023-02-19 04:59:01', 1, NULL),
+(21, 8, '5', '2023-02-19 05:28:53', NULL, 0, NULL),
+(22, 13, '5', '2023-02-20 06:03:59', NULL, 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -216,7 +203,10 @@ CREATE TABLE `tblrequestedbookdetails` (
 
 INSERT INTO `tblrequestedbookdetails` (`StudentID`, `StudName`, `BookName`, `CategoryName`, `AuthorName`, `ISBNNumber`, `BookPrice`) VALUES
 ('3', 'aaa', 'ttest book', 'Science', 'Chetan Bhagatt', 9878978, 100),
-('3', 'aaa', 'Chemistry', 'Science', 'HC Verma', 1111, 15);
+('3', 'aaa', 'Chemistry', 'Science', 'HC Verma', 1111, 15),
+('8', 'test', 'ttest book', 'Science', 'Chetan Bhagatt', 9878978, 100),
+('8', 'test', 'Chemistry', 'Science', 'HC Verma', 1111, 15),
+('5', 'Ankita Singh', 'test', 'Science', 'HC Verma', 789, 209);
 
 -- --------------------------------------------------------
 
@@ -241,15 +231,10 @@ CREATE TABLE `tblstudents` (
 --
 
 INSERT INTO `tblstudents` (`id`, `StudentId`, `FullName`, `EmailId`, `MobileNumber`, `Password`, `Status`, `RegDate`, `UpdationDate`) VALUES
-(1, 'SID002', 'Anuj kumar', 'anuj.lpu1@gmail.com', '9865472555', 'f925916e2754e5e03f75dd58a5733251', 1, '2017-07-11 15:37:05', '2018-07-13 08:49:22'),
-(4, 'SID005', 'sdfsd', 'csfsd@dfsfks.com', '8569710025', '92228410fc8b872914e023160cf4ae8f', 1, '2017-07-11 15:41:27', '2018-06-11 18:26:20'),
-(8, 'SID009', 'test', 'pb@gmail.com', '8329629259', 'f925916e2754e5e03f75dd58a5733251', 1, '2017-07-11 15:58:28', '2018-07-18 05:17:54'),
-(9, 'SID010', 'Amit', 'amit@gmail.com', '8585856224', 'f925916e2754e5e03f75dd58a5733251', 1, '2017-07-15 13:40:30', NULL),
-(10, 'SID011', 'Sarita Pandey', 'sarita@gmail.com', '4672423754', 'f925916e2754e5e03f75dd58a5733251', 1, '2017-07-15 18:00:59', NULL),
-(11, 'SID012', 'sakshi g', 'sakshi@gmail.com', '1234567890', 'b59c67bf196a4758191e42f76670ceba', 1, '2018-06-11 17:55:21', '2018-07-18 05:18:49'),
 (12, '3', 'aaa', 'aaa@gmail.com', '1242354354', '202cb962ac59075b964b07152d234b70', 1, '2023-02-17 05:13:04', NULL),
 (13, '4', 'Testing tikone', 'tikoneC@gmail.com', '982213139', '123', 1, '2023-02-17 16:29:03', '2023-02-17 16:37:47'),
-(14, '5', 'Ankita Singh', 'ankita@gmail.com', '1123424235', '202cb962ac59075b964b07152d234b70', 1, '2023-02-18 06:15:36', NULL);
+(14, '5', 'Ankita Singh', 'ankita@gmail.com', '1123424235', '202cb962ac59075b964b07152d234b70', 1, '2023-02-18 06:15:36', NULL),
+(15, '8', 'test', 'test@gmail.com', '48758467', '81dc9bdb52d04dc20036dbd8313ed055', 1, '2023-02-18 14:33:43', NULL);
 
 --
 -- Indexes for dumped tables
@@ -306,31 +291,31 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `tblauthors`
 --
 ALTER TABLE `tblauthors`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `tblbooks`
 --
 ALTER TABLE `tblbooks`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `tblcategory`
 --
 ALTER TABLE `tblcategory`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `tblissuedbookdetails`
 --
 ALTER TABLE `tblissuedbookdetails`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `tblstudents`
 --
 ALTER TABLE `tblstudents`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
