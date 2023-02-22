@@ -75,7 +75,7 @@
 							<li><a href="manage-requested-books.php" class="menu-top-active">Requested Books</a></li>
 							<!-- <li><a href="report.php" class="menu-top-active">Report</a></li> -->
                            
-                             <li><a href="reg-students.php">Reg Students</a></li>
+                             <li><a href="reg-students.php">Registered Students</a></li>
                     
   <li><a href="change-password.php">Change Password</a></li>
                         </ul>
